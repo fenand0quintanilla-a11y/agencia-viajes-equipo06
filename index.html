@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Explora Tours El Salvador</title>
+  <meta name="description" content="Sitio web educativo de Explora Tours El Salvador, agencia ficticia de viajes con destinos turísticos, paquetes, promociones y formulario de contacto." />
+  <title>Explora Tours El Salvador | Agencia de viajes</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <!-- Encabezado y menú de navegación -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#inicio">Explora Tours SV</a>
@@ -17,112 +19,166 @@
       <div class="collapse navbar-collapse" id="menuPrincipal">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencias">Experiencias</a></li>
           <li class="nav-item"><a class="nav-link" href="#destinos">Destinos</a></li>
           <li class="nav-item"><a class="nav-link" href="#paquetes">Paquetes</a></li>
           <li class="nav-item"><a class="nav-link" href="#promociones">Promociones</a></li>
+          <li class="nav-item"><a class="nav-link" href="#consejos">Consejos</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <!-- Sección principal inspirada en páginas reales de agencias turísticas -->
   <header id="inicio" class="hero-section d-flex align-items-center text-white">
     <div class="container text-center">
-      <p class="badge bg-warning text-dark mb-3">Turismo nacional</p>
-      <h1 class="display-4 fw-bold">Descubre El Salvador con Explora Tours</h1>
-      <p class="lead mx-auto">Creamos experiencias de viaje seguras, accesibles y llenas de aventura para conocer playas, volcanes, pueblos vivos y paisajes únicos.</p>
-      <a href="#paquetes" class="btn btn-warning btn-lg mt-3">Ver paquetes</a>
+      <p class="badge bg-warning text-dark mb-3">Agencia de viajes ficticia</p>
+      <h1 class="display-4 fw-bold">Explora El Salvador con experiencias seguras y memorables</h1>
+      <p class="lead mx-auto">En Explora Tours El Salvador reunimos en un solo sitio destinos turísticos, paquetes de viaje, promociones y medios de contacto para que los visitantes puedan planificar su próxima aventura.</p>
+      <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mt-4">
+        <a href="#paquetes" class="btn btn-warning btn-lg">Ver paquetes</a>
+        <a href="#contacto" class="btn btn-outline-light btn-lg">Solicitar información</a>
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="py-5 bg-light">
+    <!-- Información rápida de servicios -->
+    <section id="experiencias" class="py-5 bg-light">
       <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Experiencias que ofrecemos</h2>
+          <p class="text-muted">Organizamos viajes para conocer la riqueza natural, cultural e histórica de El Salvador.</p>
+        </div>
         <div class="row text-center g-4">
           <div class="col-md-4">
-            <div class="info-box h-100">
+            <article class="info-box h-100">
               <span class="icono">🚌</span>
               <h3>Transporte seguro</h3>
-              <p>Viajes organizados con rutas planificadas para familias, estudiantes y grupos de amigos.</p>
-            </div>
+              <p>Rutas organizadas para estudiantes, familias y grupos que desean viajar con comodidad.</p>
+            </article>
           </div>
           <div class="col-md-4">
-            <div class="info-box h-100">
+            <article class="info-box h-100">
               <span class="icono">🌋</span>
-              <h3>Destinos variados</h3>
-              <p>Playas, montañas, volcanes, lagos y pueblos culturales en diferentes zonas del país.</p>
-            </div>
+              <h3>Aventura natural</h3>
+              <p>Visitas a volcanes, lagos, playas y montañas para disfrutar paisajes únicos del país.</p>
+            </article>
           </div>
           <div class="col-md-4">
-            <div class="info-box h-100">
-              <span class="icono">💬</span>
-              <h3>Atención rápida</h3>
-              <p>Formulario de contacto para consultar precios, horarios y disponibilidad de paquetes.</p>
-            </div>
+            <article class="info-box h-100">
+              <span class="icono">🏘️</span>
+              <h3>Cultura local</h3>
+              <p>Recorridos por pueblos vivos, centros históricos, gastronomía, artesanías y tradiciones.</p>
+            </article>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Destinos turísticos principales -->
     <section id="destinos" class="py-5">
       <div class="container">
         <div class="text-center mb-5">
           <h2 class="fw-bold">Destinos turísticos</h2>
-          <p class="text-muted">Lugares recomendados para vivir una experiencia inolvidable en El Salvador.</p>
+          <p class="text-muted">Lugares recomendados para descubrir El Salvador en viajes de un día o fines de semana.</p>
         </div>
         <div class="row g-4">
           <div class="col-md-6 col-lg-3">
-            <div class="card destino-card h-100 shadow-sm">
-              <div class="destino-img destino-playa"></div>
+            <article class="card destino-card h-100 shadow-sm">
+              <div class="destino-img destino-playa" role="img" aria-label="Playa de El Salvador"></div>
               <div class="card-body">
                 <h5 class="card-title">Playa El Tunco</h5>
-                <p class="card-text">Ideal para surf, atardeceres, gastronomía y actividades frente al mar.</p>
+                <p class="card-text">Destino ideal para surf, atardeceres, comida frente al mar y fotografías.</p>
               </div>
-            </div>
+            </article>
           </div>
           <div class="col-md-6 col-lg-3">
-            <div class="card destino-card h-100 shadow-sm">
-              <div class="destino-img destino-volcan"></div>
+            <article class="card destino-card h-100 shadow-sm">
+              <div class="destino-img destino-volcan" role="img" aria-label="Volcán de Santa Ana"></div>
               <div class="card-body">
                 <h5 class="card-title">Volcán de Santa Ana</h5>
-                <p class="card-text">Una aventura natural con caminata, miradores y una vista impresionante.</p>
+                <p class="card-text">Una experiencia de caminata con miradores, naturaleza y paisajes impresionantes.</p>
               </div>
-            </div>
+            </article>
           </div>
           <div class="col-md-6 col-lg-3">
-            <div class="card destino-card h-100 shadow-sm">
-              <div class="destino-img destino-ruta"></div>
+            <article class="card destino-card h-100 shadow-sm">
+              <div class="destino-img destino-ruta" role="img" aria-label="Ruta de las Flores"></div>
               <div class="card-body">
                 <h5 class="card-title">Ruta de las Flores</h5>
-                <p class="card-text">Pueblos coloridos, café, artesanías, clima fresco y cultura salvadoreña.</p>
+                <p class="card-text">Pueblos coloridos, clima fresco, café, artesanías y cultura salvadoreña.</p>
               </div>
-            </div>
+            </article>
           </div>
           <div class="col-md-6 col-lg-3">
-            <div class="card destino-card h-100 shadow-sm">
-              <div class="destino-img destino-lago"></div>
+            <article class="card destino-card h-100 shadow-sm">
+              <div class="destino-img destino-lago" role="img" aria-label="Lago de Coatepeque"></div>
               <div class="card-body">
                 <h5 class="card-title">Lago de Coatepeque</h5>
-                <p class="card-text">Un destino perfecto para relajarse, tomar fotografías y disfrutar en familia.</p>
+                <p class="card-text">Perfecto para relajarse, compartir en familia y disfrutar una vista natural.</p>
               </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categorías de viajes -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Tipos de viajes</h2>
+          <p class="text-muted">Opciones organizadas según el estilo de cada visitante.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 border-0 shadow-sm text-center p-3">
+              <span class="icono">👨‍👩‍👧‍👦</span>
+              <h5>Familiares</h5>
+              <p class="small text-muted">Viajes tranquilos y seguros para todas las edades.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 border-0 shadow-sm text-center p-3">
+              <span class="icono">🥾</span>
+              <h5>Aventura</h5>
+              <p class="small text-muted">Caminatas, miradores y actividades al aire libre.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 border-0 shadow-sm text-center p-3">
+              <span class="icono">🏛️</span>
+              <h5>Culturales</h5>
+              <p class="small text-muted">Historia, pueblos, tradiciones y gastronomía local.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="card h-100 border-0 shadow-sm text-center p-3">
+              <span class="icono">🌊</span>
+              <h5>Playa</h5>
+              <p class="small text-muted">Salidas para descansar y disfrutar la costa salvadoreña.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="paquetes" class="py-5 bg-light">
+    <!-- Paquetes disponibles -->
+    <section id="paquetes" class="py-5">
       <div class="container">
         <div class="text-center mb-5">
           <h2 class="fw-bold">Paquetes disponibles</h2>
-          <p class="text-muted">Opciones pensadas para diferentes gustos y presupuestos.</p>
+          <p class="text-muted">Opciones pensadas para diferentes gustos, tiempos y presupuestos.</p>
         </div>
         <div class="row g-4">
           <div class="col-md-4">
-            <div class="card paquete-card h-100 border-0 shadow-sm">
+            <article class="card paquete-card h-100 border-0 shadow-sm">
               <div class="card-body">
+                <p class="badge bg-primary">Más cómodo</p>
                 <h5 class="fw-bold">Paquete Familiar</h5>
-                <p>Viaje cómodo para familias que desean conocer lugares seguros y tranquilos.</p>
+                <p>Viaje recomendado para familias que buscan lugares seguros y actividades tranquilas.</p>
                 <ul>
                   <li>Transporte ida y vuelta</li>
                   <li>Guía turístico</li>
@@ -130,13 +186,14 @@
                 </ul>
                 <p class="precio">Desde $25 por persona</p>
               </div>
-            </div>
+            </article>
           </div>
           <div class="col-md-4">
-            <div class="card paquete-card h-100 border-0 shadow-sm paquete-destacado">
+            <article class="card paquete-card h-100 border-0 shadow-sm paquete-destacado">
               <div class="card-body">
+                <p class="badge bg-warning text-dark">Popular</p>
                 <h5 class="fw-bold">Paquete Aventura</h5>
-                <p>Para quienes disfrutan caminar, explorar paisajes y vivir experiencias activas.</p>
+                <p>Ideal para jóvenes y grupos que desean caminar, explorar y conocer paisajes naturales.</p>
                 <ul>
                   <li>Caminata guiada</li>
                   <li>Recomendaciones de seguridad</li>
@@ -144,13 +201,14 @@
                 </ul>
                 <p class="precio">Desde $30 por persona</p>
               </div>
-            </div>
+            </article>
           </div>
           <div class="col-md-4">
-            <div class="card paquete-card h-100 border-0 shadow-sm">
+            <article class="card paquete-card h-100 border-0 shadow-sm">
               <div class="card-body">
+                <p class="badge bg-success">Económico</p>
                 <h5 class="fw-bold">Paquete Fin de Semana</h5>
-                <p>Una salida corta para descansar, compartir y conocer nuevos destinos.</p>
+                <p>Una salida corta para descansar, compartir y conocer nuevos destinos del país.</p>
                 <ul>
                   <li>Salida sábado o domingo</li>
                   <li>Itinerario organizado</li>
@@ -158,12 +216,54 @@
                 </ul>
                 <p class="precio">Desde $20 por persona</p>
               </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Razones para elegir la agencia -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <h2 class="fw-bold">¿Por qué elegir Explora Tours?</h2>
+            <p>La agencia busca facilitar la información turística en un solo lugar, evitando que los clientes dependan únicamente de mensajes por WhatsApp o publicaciones aisladas.</p>
+            <p>Este sitio permite revisar destinos, comparar paquetes y enviar datos mediante un formulario de contacto.</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <div class="card border-0 shadow-sm h-100 p-3">
+                  <h5>Guías locales</h5>
+                  <p class="small text-muted">Personas que conocen los lugares, rutas y recomendaciones básicas.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card border-0 shadow-sm h-100 p-3">
+                  <h5>Grupos pequeños</h5>
+                  <p class="small text-muted">Mejor atención y organización durante cada recorrido.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card border-0 shadow-sm h-100 p-3">
+                  <h5>Información clara</h5>
+                  <p class="small text-muted">Paquetes, destinos y contacto reunidos en una sola página.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="card border-0 shadow-sm h-100 p-3">
+                  <h5>Diseño responsive</h5>
+                  <p class="small text-muted">La página puede verse desde computadora, tablet o celular.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Promoción -->
     <section id="promociones" class="py-5 promo-section text-white">
       <div class="container">
         <div class="row align-items-center g-4">
@@ -174,7 +274,7 @@
           <div class="col-lg-5">
             <div class="promo-box text-center">
               <h3>15% de descuento</h3>
-              <p>Disponible durante este mes para viajes escolares, familiares o comunitarios.</p>
+              <p>Disponible para viajes escolares, familiares o comunitarios.</p>
               <a href="#contacto" class="btn btn-light">Solicitar información</a>
             </div>
           </div>
@@ -182,6 +282,43 @@
       </div>
     </section>
 
+    <!-- Consejos o blog turístico -->
+    <section id="consejos" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Consejos para viajar</h2>
+          <p class="text-muted">Pequeñas recomendaciones para que el visitante planifique mejor su recorrido.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <article class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="fw-bold">Elige el destino según tu tiempo</h5>
+                <p>Para una salida corta convienen lugares cercanos; para una aventura completa, un paquete de día completo es mejor.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="fw-bold">Lleva ropa cómoda</h5>
+                <p>En caminatas o visitas a volcanes se recomienda usar zapatos adecuados, agua y protección solar.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="fw-bold">Consulta antes de reservar</h5>
+                <p>El formulario permite enviar datos para recibir información sobre horarios, precios y disponibilidad.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario de contacto -->
     <section id="contacto" class="py-5">
       <div class="container">
         <div class="text-center mb-5">
@@ -230,6 +367,7 @@
     </section>
   </main>
 
+  <!-- Pie de página -->
   <footer class="bg-dark text-white text-center py-4">
     <div class="container">
       <h5 class="fw-bold">Explora Tours El Salvador</h5>
