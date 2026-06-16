@@ -1,0 +1,131 @@
+:root {
+  --color-principal: #0d6efd;
+  --color-secundario: #ffc107;
+  --color-oscuro: #102033;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  padding-top: 56px;
+}
+
+.hero-section {
+  min-height: 88vh;
+  background: linear-gradient(rgba(13, 43, 78, 0.72), rgba(13, 43, 78, 0.72)),
+              url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-section .lead {
+  max-width: 780px;
+}
+
+.info-box {
+  background: white;
+  padding: 30px 22px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.info-box:hover,
+.destino-card:hover,
+.paquete-card:hover {
+  transform: translateY(-6px);
+}
+
+.icono {
+  display: block;
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.destino-card,
+.paquete-card {
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.destino-img {
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+}
+
+.destino-playa {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)), url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=80");
+}
+
+.destino-volcan {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)), url("https://images.unsplash.com/photo-1508896694512-1eade558679c?auto=format&fit=crop&w=900&q=80");
+}
+
+.destino-ruta {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)), url("https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=900&q=80");
+}
+
+.destino-lago {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)), url("https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=900&q=80");
+}
+
+.precio {
+  color: var(--color-principal);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.paquete-destacado {
+  border-top: 6px solid var(--color-secundario) !important;
+}
+
+.promo-section {
+  background: linear-gradient(135deg, #0d6efd, #102033);
+}
+
+.promo-box {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 30px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.form-control,
+.form-select {
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.btn {
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+section {
+  scroll-margin-top: 70px;
+}
+
+footer {
+  background: var(--color-oscuro) !important;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 75vh;
+    text-align: center;
+  }
+
+  .hero-section h1 {
+    font-size: 2.1rem;
+  }
+
+  .destino-img {
+    height: 210px;
+  }
+}
